@@ -1,0 +1,46 @@
+# 风格卡：国风厚涂
+# 领域：wallpaper（手机壁纸）
+
+name: 国风厚涂
+domain: wallpaper
+version: 1
+summary: 国风东方美学壁纸，鬼刀式厚涂插画风，细节拉满
+default: true
+use_when: 手机壁纸、个人审美向的配图
+
+likes:
+  - item: 国风东方美学元素
+    weight: 0.9
+    source: user_stated
+    since: "2026-10-10"
+  - item: 厚涂插画质感（参考 Ghost Blade 鬼刀风格）
+    weight: 0.9
+    source: user_stated
+    since: "2026-10-10"
+  - item: 细节丰富、信息量大
+    weight: 0.8
+    source: user_stated
+    since: "2026-10-10"
+
+dislikes: []
+# dislikes 比 likes 更能纠偏，优先采集。
+# 已问用户"AI 生成图最让你讨厌的一点是什么"，等回答后补。
+
+hard_constraints:
+  - 分辨率不低于 1260x2622
+
+soft_preferences:
+  - 横构图可接受，不强制竖构图
+
+# 参考图是核心资产，形容词只是索引。格式：
+# - id: 稳定编号 / path: 本地路径或URL / hash: 内容哈希（防路径失效）
+#   score: 1-10 / tags: [] / palette: [] / composition: 一句话 / mood: 情绪标签
+#   source: 收藏导入 | 二选一测试 | 面谈
+references_positive: []
+references_negative: []
+
+# 语义级描述：由调用方翻译成所用模型的 prompt 方言，不要硬抄原文
+prompt_semantics: 东方美学、国风元素、厚涂插画质感（Ghost Blade 鬼刀风格参考）、细节丰富、氛围感强
+
+notes:
+  - 聊天通道会压图（实测 3840x2160 -> 1206x679）：用户发图求细节分析时默认拿到的是压缩版，以本地原图为准

@@ -1,0 +1,27 @@
+# 新风格卡模板
+# 复制为 domains/<领域>/styles/<卡名>.yaml 后填空
+
+name: <卡名，如 国风厚涂>
+domain: <领域，如 wallpaper>
+version: 1
+summary: <一句话>
+default: false          # 是否为该领域默认卡
+use_when: <适用场景>
+
+likes:
+  - item: <具体偏好，越具体越好："国风"不如"水墨留白+朱砂点缀">
+    weight: 0.9         # 0-1，在意程度
+    source: user_stated # user_stated（亲口说的）| ai_inferred（AI 推断的，置信度更低）
+    since: "2026-10-15"
+
+dislikes: []            # "不要什么"比"要什么"更能纠偏，优先采集
+
+hard_constraints: []    # 硬红线，如分辨率下限、禁用元素
+soft_preferences: []    # 软偏好，如"尽量横构图"
+
+references_positive: [] # "就要这样的"：{id, path, hash, score(1-10), tags[], palette[], composition, mood, source}
+references_negative: [] # "打死不要这样的"：同上格式
+
+prompt_semantics: <语义级描述，调用方翻译成目标模型的 prompt 方言>
+
+notes: []
