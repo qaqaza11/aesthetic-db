@@ -1,1 +1,3 @@
 {"ts":"2026-10-15T06:00:00+08:00","domain":"wallpaper","card":"guofeng-houtu","card_version":1,"task":"seed","verdict":"up","note":"冷启动基线，用户 2026-10-10 原话"}
+{"ts":"2026-10-15T15:03:00+08:00","domain":"wallpaper","card":"anhei-houtu","card_version":1,"task":"用户批量投喂3张参考图","verdict":"up","note":"图1黑发珠宝少女+图3红伞雨夜，用户确认入库"}
+{"ts":"2026-10-15T15:03:00+08:00","domain":"wallpaper","card":"jijian-xiangao","card_version":1,"task":"用户批量投喂3张参考图","verdict":"up","note":"图2耳机线稿少女，用户确认入库"}

@@ -1,0 +1,52 @@
+# 风格卡：极简线稿
+# 领域：wallpaper（手机壁纸）
+
+name: 极简线稿
+domain: wallpaper
+version: 1
+summary: 黑白极简线稿，大量留白，细腻排线，一处点睛之笔
+default: false
+use_when: 想要安静、克制、有呼吸感的壁纸时
+
+likes:
+  - item: 黑白线稿，极简
+    weight: 0.9
+    source: user_stated
+    since: "2026-10-15"
+  - item: 大量留白，画面透气
+    weight: 0.85
+    source: ai_inferred
+    since: "2026-10-15"
+  - item: 细腻排线质感
+    weight: 0.8
+    source: ai_inferred
+    since: "2026-10-15"
+  - item: 单一低饱和点睛色（如耳机上的一笔金）
+    weight: 0.75
+    source: ai_inferred
+    since: "2026-10-15"
+
+dislikes: []
+
+hard_constraints:
+  - 分辨率不低于 1260x2622
+
+soft_preferences: []
+
+references_positive:
+  - id: jijian-01
+    path: domains/wallpaper/references/positive/jijian-xiangao-01.jpg
+    hash: 80d34a023e84
+    score: 9
+    tags: [黑白线稿, 极简, 留白, 侧脸, 耳机]
+    palette: ["#ffffff", "#1a1a1a", "#b08d57"]
+    composition: 侧脸居右，大面积斜排线背景，耳机为唯一灰面+金色点缀
+    mood: 安静、疏离、呼吸感
+    source: 收藏导入
+
+references_negative: []
+
+prompt_semantics: 黑白极简线稿，大量留白，细腻排线；只允许一处低饱和点睛色；情绪安静克制，拒绝拥挤和花哨
+
+notes:
+  - 与厚涂系完全对立的审美，独立成卡，不可混用

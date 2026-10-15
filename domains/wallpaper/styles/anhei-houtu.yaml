@@ -1,0 +1,61 @@
+# 风格卡：暗黑厚涂
+# 领域：wallpaper（手机壁纸）
+
+name: 暗黑厚涂
+domain: wallpaper
+version: 1
+summary: 暗黑底色上的厚涂插画，靠高饱和点缀色提亮，情绪神秘华丽
+default: false
+use_when: 想要暗黑、神秘、有力量感的壁纸时
+
+likes:
+  - item: 厚涂油画质感，笔触可见
+    weight: 0.9
+    source: user_stated
+    since: "2026-10-15"
+  - item: 暗色调打底（深蓝灰/黑），高饱和点缀色提亮（珠宝红绿、伞红）
+    weight: 0.85
+    source: ai_inferred
+    since: "2026-10-15"
+  - item: 面部特写构图，配饰细节丰富（发饰、纹身、珠宝）
+    weight: 0.8
+    source: ai_inferred
+    since: "2026-10-15"
+  - item: 东方元素（和服式服装、纸伞、发饰）
+    weight: 0.7
+    source: ai_inferred
+    since: "2026-10-15"
+
+dislikes: []
+
+hard_constraints:
+  - 分辨率不低于 1260x2622
+
+soft_preferences: []
+
+references_positive:
+  - id: anhei-01
+    path: domains/wallpaper/references/positive/anhei-houtu-01.jpg
+    hash: e652357e5d11
+    score: 9
+    tags: [暗黑奇幻, 厚涂, 珠宝配饰, 面部特写]
+    palette: ["#1f2833", "#0d1117", "#8b2e2e", "#2e6b4f"]
+    composition: 面部特写，黑发铺满画面，发间珠宝为视觉焦点
+    mood: 神秘、力量感、暗黑华丽
+    source: 收藏导入
+  - id: anhei-02
+    path: domains/wallpaper/references/positive/anhei-houtu-02.jpg
+    hash: 0ef1dd698f48
+    score: 9
+    tags: [雨夜, 红伞, 和服, 纹身, 红黑对比]
+    palette: ["#a31621", "#16181d", "#e8e4da"]
+    composition: 红纸伞压顶形成视觉锤，人物居中，雨滴点缀
+    mood: 妖异、故事感、东方暗黑
+    source: 收藏导入
+
+references_negative: []
+
+prompt_semantics: 暗黑底色厚涂插画，笔触可见；深蓝灰或黑色打底，用高饱和色（宝石红、伞红）做视觉焦点；配饰细节丰富；情绪神秘华丽，拒绝廉价感
+
+notes:
+  - 与"国风厚涂"共享厚涂质感，但情绪更暗黑，不可混用
