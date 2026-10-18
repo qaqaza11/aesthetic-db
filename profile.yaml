@@ -1,9 +1,10 @@
 # 全局配置
 version: 1
 
-# 各领域默认风格卡（用户点名 > 这里的默认 > AI 建议经确认后切换）
+# 各领域默认风格卡（选择顺序：用户指定 > 任务意图匹配 > 这里的领域默认）
+# 领域标识以风格卡的 domain 字段为准；默认映射只在这里维护，风格卡不再自带 default 字段
 defaults:
-  image/wallpaper: guofeng-houtu
+  wallpaper: guofeng-houtu
 
 # 铁律（所有领域通用）
 principles:
@@ -12,3 +13,5 @@ principles:
   - 沉默不代表喜欢；反馈默认只收 👍/👎，文字说明可选
   - AI 推断出的偏好置信度低于用户亲口说的，更容易被覆盖
   - 不要把一个领域的偏好自动推广到其他领域
+  - 硬约束只能来自用户明确要求或交付规范；AI 推断出的倾向只进 likes/soft_preferences，措辞永不得用"必须/禁止/只允许"
+  - 反馈事件分四类：preference_seed（偏好声明/初始化）、reference_intake（参考图入库确认）、reference_review（参考图评价）、generation_review（生成结果评价）；只有 generation_review 计入满意度统计；纠错一律追加 correction 记录，不覆盖原文

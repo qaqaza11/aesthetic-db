@@ -5,7 +5,6 @@ name: 国风厚涂
 domain: wallpaper
 version: 1
 summary: 国风东方美学壁纸，鬼刀式厚涂插画风，细节拉满
-default: true
 use_when: 手机壁纸、个人审美向的配图
 
 likes:

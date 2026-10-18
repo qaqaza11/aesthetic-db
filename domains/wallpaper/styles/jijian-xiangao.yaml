@@ -5,7 +5,6 @@ name: 极简线稿
 domain: wallpaper
 version: 1
 summary: 黑白极简线稿，大量留白，细腻排线，一处点睛之笔
-default: false
 use_when: 想要安静、克制、有呼吸感的壁纸时
 
 likes:
@@ -21,7 +20,7 @@ likes:
     weight: 0.8
     source: ai_inferred
     since: "2026-10-15"
-  - item: 单一低饱和点睛色（如耳机上的一笔金）
+  - item: 单处低饱和点睛色（如耳机上的一笔金），数量可多可少
     weight: 0.75
     source: ai_inferred
     since: "2026-10-15"
@@ -46,7 +45,7 @@ references_positive:
 
 references_negative: []
 
-prompt_semantics: 黑白极简线稿，大量留白，细腻排线；只允许一处低饱和点睛色；情绪安静克制，拒绝拥挤和花哨
+prompt_semantics: 黑白极简线稿，大量留白，细腻排线；倾向单处低饱和点睛色（如耳机上的一笔金，属 AI 推断倾向、可多可少）；情绪安静克制，拒绝拥挤和花哨
 
 notes:
-  - 与厚涂系完全对立的审美，独立成卡，不可混用
+  - 与厚涂系审美差异大，默认独立成卡使用；用户明确要求融合时按维度裁决取舍
