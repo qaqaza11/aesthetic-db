@@ -1,0 +1,67 @@
+name: 极简线稿·辅助图解
+domain: document
+version: 1
+summary: "可叠加使用的纯线稿辅助语言，倾向用黑白轮廓、细腻排线与大片留白解释概念。"
+use_when: 与任何文档主卡可叠加使用，适合连续阅读或投屏演示中的流程图、概念示意、章节小插画与局部操作说明。
+
+likes:
+  - item: 倾向黑白纯线稿与空心轮廓，以线条描述对象和关系；浅底通常用深线、暗底适合浅线，图面背景与主卡衔接，保持克制清楚的辅助角色。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 线条倾向细而可辨、转折干净，细腻排线通常放在小插画的局部形体上；流程连线与标签周围适合保持简洁，排线密度可多可少。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 流程与概念图倾向留出宽松节点间距，让方向箭头、分支和分组边界容易追踪；构图通常沿阅读顺序展开，留白服务关系辨认与分组。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 点睛色倾向集中在一个关键节点或一处局部细节，适合灰金、灰青等低饱和色；与主卡叠加时通常从主卡色系取协调版本，用文字或线型同时标明含义。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 图内标签倾向沿用主卡字体与术语，短标签贴近对应节点，长解释放在相邻图注；信息层级通常是关系骨架、关键节点、补充说明，适合与正文编号相互索引。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 封面辅助线稿通常可稍展开，章节小插画倾向一处简洁意象，正文图解适合精简到说明关系的部分；若主卡带厚涂主视觉，线稿倾向放在独立辅助区域。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 连续阅读图解倾向保留近看可辨的细线与少量排线，投屏图解通常加粗关系骨架、放大节点间距并减少纹理；同一概念适合按媒介调整细节密度。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+
+dislikes: []
+hard_constraints:
+  - "节点名称、连接方向、分支条件与正文内容一致；图中的简化保留论述所依赖的关键关系，示意比例与真实比例的区别有文字说明。"
+  - "图内文字对最终背景的对比度不低于 4.5:1，承担信息的线条和标记对相关相邻颜色的对比度不低于 3:1；浅底与暗底版本分别检查。"
+  - "交付在最终嵌入尺寸检查线条、箭头与标签的可辨性；投屏图解沿用主卡的字号交付规范并做后排试读，放大与导出后的文字和关系线保留完整。"
+soft_preferences: []
+references_positive: []
+references_negative: []
+
+prompt_semantics: >-
+  可叠加使用的辅助图解语言，倾向黑白轮廓、局部细腻排线、大量留白与一处低饱和点睛色。
+  通过节点、方向、分组和相邻标签解释内容，连续阅读与投屏演示采用适合各自距离的细节密度。
+  背景明暗、字体和页面层级承接主卡，线稿风格落在图解或小插画区域，厚涂主视觉仍由主卡组织。
+  封面、章节、正文的辅助装饰依次收敛，内容准确性、可读性优先于审美。
+
+notes:
+  - "偏好迁移线索来自 wallpaper/jijian-xiangao.yaml；本卡中的文档图解倾向均为 ai_drafted，待用户确认后再进入正式偏好。"
+  - "可叠加使用：页面底色、字体、网格与封面主视觉来自所选主卡；辅助图的线条、排线、留白与局部点睛来自 document/line_art_diagram。叠加记录按实际采用的每项偏好注明卡名与条目，保留 ai_drafted 来源。"
+  - "与 data_viz_palette 同时叠加时，数据颜色与标注角色来自该数据卡，本卡通常提供轮廓和关系线；已有数据编码优先，纯装饰点睛色可多可少。与其他主卡搭配时按背景调整线色，主卡的主视觉继续保留。"
+  - "全局取舍沿用 profile.yaml：内容准确性、可读性、任务要求优先于审美偏好；偏好有冲突时先保证信息含义与交付可读性。"
+  - "分类维度参考 Looka《Graphic Design Styles》（https://looka.com/blog/graphic-design-styles/）：借鉴有限色板、留白与视觉元素的组合。"
+  - "分类维度参考 Adobe Spectrum《Illustration》（https://spectrum.adobe.com/foundations/visual-language/illustration）：借鉴辅助线性插画的注意力层级与深浅背景适配；封面到正文的分级是本卡推演。"
+  - "分类维度参考 Midlibrary《Midjourney Style Classifier》（https://midlibrary.io/midjourney-styles-classifier）：借鉴线条、细节、色彩、构图与情绪的多特征描述。"
+  - "对比度交付指标参考 W3C WCAG 2.2 的文字对比度说明（https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html）与非文字对比度说明（https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html）。"
+
+  - 2026-10-19 用户审阅 AI 生成的 document 预览对照图（8 张）后确认本卡入库（选中第 4 张）
+pending_confirmation:
+  - "辅助图解更倾向精确的几何制图线条，还是保留轻微手绘感的线条，流程图与章节小插画是否采用不同程度？"
+  - "细腻排线更倾向只出现在章节小插画里，还是也接受概念图的少量局部排线？"
+  - "一处点睛色更倾向灰金、灰青，还是随主卡强调色调整，在已有数据编码时是否接受省去装饰色？"
+  - "与暗色主卡搭配时，更倾向浅色线条直接落在暗底，还是放进与正文分隔的浅色图框？"

@@ -1,0 +1,54 @@
+name: 黑白平线
+domain: ui_theme
+version: 1
+summary: "以黑白灰、细线和大量留白构成纯平面界面，低饱和微色作为可调点缀。"
+use_when: 探索黑白微色与纯平面表现的组合，用于线稿壁纸、简洁锁屏和轻量信息桌面试稿。
+likes:
+  - item: 倾向以黑、白和中性灰建立界面，低饱和点睛色集中于一处视觉焦点，具体色号待确认，点缀量可多可少。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向无纹理、渐变和立体光影的纯色平面，通过留白、线条与实色选中标记组织界面。
+    weight: 0.4
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向等宽细线图标、简洁轮廓和轻圆角，局部小实心面辅助表达选中态，线宽随尺寸调整。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向壁纸与锁屏共享疏朗线稿和留白；小组件延续线条与间距，控件以清晰边界衔接，微色焦点按当前页面分配。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向低装饰密度，大量留白围绕信息分组展开；细腻排线可少量保留在壁纸局部，组件内以简线为主。
+    weight: 0.4
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向通过字号、字重和组间距区分时间、标题、正文与辅助说明，文字层级不依赖增加装饰色。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+dislikes: []
+hard_constraints: []
+soft_preferences:
+  - 内容准确性、可读性和任务要求优先；细线与辅助灰度以实际屏幕可辨识程度调整，留白可随信息量变化。
+  - 成功、警告、错误倾向独立配置语义色并搭配文字或符号；状态用色可超出装饰微色的数量与饱和度。
+  - 黑底与白底作为可比较版本；装饰点睛色与选中态可分别控制，黑白版本也倾向保留清楚的交互提示。
+references_positive: []
+references_negative: []
+prompt_semantics: >-
+  C1＝黑白微色×纯平面，候选重点为细线、留白和低饱和、小面积点缀。
+  相对C2黑白微纹，本卡表面为无质感平涂，局部排线属于可辨认的图形装饰，不铺成材质底纹。
+  相对A1东方平色，本卡以黑白灰为主体，不预设传统色板；
+  相对B1宝石平色，即便采用黑底，彩色焦点也倾向低饱和、小面积。
+notes:
+  - "分类维度参考Interaction Design Foundation：Flat Design（https://ixdf.org/literature/topics/flat-design），借鉴二维表现与层级组织维度。"
+  - "分类维度参考Adobe Firefly：Style Presets（https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets/），借鉴 bw、muted_color 色调词汇。"
+  - "分类维度参考Looka：Graphic Design Styles（https://looka.com/blog/graphic-design-styles/），借鉴几何形态与装饰程度维度。"
+  - "本卡为 ui_theme 候选；壁纸偏好仅作假设来源，尚无本领域的用户确认。"
+  - 2026-10-19 用户审阅 AI 生成的 ui_theme 预览对照图（8 张）后确认本卡入库（选中第 4 张）
+pending_confirmation:
+  - "点睛色具体喜欢哪种颜色或色号，是否想同时比较纯黑白版本？"
+  - "更喜欢白底黑线还是黑底白线，灰色层级希望多明显？"
+  - "图标更偏纤细线条还是稍粗线条，局部面性选中标记是否合意？"
+  - "留白希望占多大比例，壁纸是否保留少量细腻排线？"

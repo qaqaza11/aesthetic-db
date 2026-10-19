@@ -1,0 +1,49 @@
+name: 极简线稿·半身肖像
+domain: avatar
+version: 1
+summary: '以黑白半身线稿呈现人物姿态，用衣着线条和一件记忆点配饰组织画面。'
+use_when: 适合希望头像同时表达穿搭、姿态与个人兴趣，并让面部保持视觉重心的场景。
+likes:
+- item: 黑白线稿半身像，肩颈与上身姿态舒展，脸部仍是视觉重心
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 衣领、发带或耳机线构成画面骨架，衣褶用少量长短线交代
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 白底留出人物周围的空隙，发丝与衣着线条疏密分明
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 局部斜排线或稀疏点阵形成极简背景肌理，浓淡轻于人物轮廓
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 倾向保留一件记忆点配饰，如耳机、发簪或围巾，可用低饱和色轻轻点亮
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 神情克制，姿态带轻微侧倾或转肩，衣着与配饰流露干净的文艺气质
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+dislikes: []
+hard_constraints:
+- 1:1 方形输出，边长不低于 1024px
+- 主体面部与关键配饰位于画面中央圆形裁切安全区内
+- 小尺寸下面部仍可辨识，避免细小文字和细碎背景细节喧宾夺主
+soft_preferences: []
+references_positive: []
+references_negative: []
+prompt_semantics: 黑白极简线稿半身肖像，为肩颈、转肩或轻微侧倾的姿态留出空间，同时保持脸部为视觉重心。用衣领、发带或耳机线组织画面，白底上可加入轻淡的局部斜排线或稀疏点阵。倾向选择一件耳机、发簪或围巾作为记忆点，可带低饱和点睛色，整体气质克制、文艺、干净。面部与关键配饰集中于中央圆形裁切安全区，半身取景兼顾头像缩小后的面部辨识度。
+notes:
+- 分类维度参考Midlibrary（https://midlibrary.io/midjourney-styles-classifier）
+- 分类维度参考Will Wulfken MJ词库（https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference）
+- 分类维度参考Stable Diffusion Art prompt指南（https://stable-diffusion-art.com/prompt-guide/）
+- 分类维度参考Adobe Spectrum（https://spectrum.adobe.com/foundations/visual-language/illustration）
+- 2026-10-19 用户审阅 AI 生成的 avatar 预览对照图（8 张）后确认本卡入库（选中第 7 张）
+pending_confirmation:
+- 人物题材与穿搭倾向校园感、成熟文艺感，还是无性别感的日常形象？
+- 记忆点配饰倾向耳机、发簪、围巾，还是其他物件；是否希望它带低饱和色？
+- 半身取景倾向胸像还是腰部以上，是否接受手部入画或明显转肩？

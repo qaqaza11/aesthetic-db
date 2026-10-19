@@ -1,0 +1,59 @@
+name: 东方厚涂·封面章节主视觉
+domain: document
+version: 1
+summary: "倾向把鬼刀式东方厚涂集中在封面与章节主视觉，用水墨留白承接标题、朱砂点缀建立焦点。"
+use_when: 适合主题与东方意象相契合的课程报告封面、文档章节扉页、PPT 标题页与章节过渡页，承担主题引入和段落转场。
+likes:
+  - item: 倾向鬼刀式厚涂插画的层叠笔触、体积光影与局部精细刻画，细节集中在主视觉主体，周围以雾气或留白形成舒展节奏。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向从课程主题中选择山水、器物、建筑或人物等东方意象，主体轮廓明确，情绪含蓄而有叙事张力。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向水墨留白配朱砂小面积点缀，墨黑、石青或素白构成主要色域，红色通常落在与标题呼应的局部焦点。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向插画主体偏置、标题落在相邻的干净留白区，人物视线或山势引向主题文字，图与字各有清晰边界。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向题名、章节号、课程与作者信息形成清楚层级，主标题使用易辨认的现代宋体或黑体，以稳重字形承接丰富画面。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向封面使用完整厚涂主视觉，章节页选用更简化的局部意象，正文回到素底文字与解释性图表，装饰强度逐级降低。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向主视觉表达主题与氛围，题名和短副标题提供内容锚点；涉及事实说明时，配图角色与证据来源分别标识，方便读者辨别。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+dislikes: []
+hard_constraints: []
+soft_preferences:
+  - 倾向以插画约占封面 40%–60% 的面积作为试排起点，章节页缩小主视觉并增加留白；细节量可多可少，取决于题名长度与主题关联。
+  - 倾向封面呈现题名、短副标题与必要署名，章节页通常聚焦章节号与题名，信息密度低于连续阅读的正文页。
+  - 倾向以 A4 封面题名 28–36 pt、投屏标题页题名 40–52 pt 和必要说明 28–32 pt 作为试排起点，投屏标题区通常使用更强的明暗对比。
+  - 倾向文字置于颜色稳定的净空区域；正文按连续阅读或投屏任务另配字号、密度与对比度，内容准确性和可读性始终优先。
+references_positive: []
+references_negative: []
+prompt_semantics: >-
+  适合文档封面、章节扉页与 PPT 标题页的东方厚涂主视觉，承接国风厚涂的笔触、体积感和局部细节，
+  倾向以水墨留白、朱砂点缀和偏置构图形成主题焦点，标题在清晰净空区建立信息层级。
+  厚涂集中于主题引入位置，章节页通常更简，正文回归服务理解的排版与图表；插画承担主题联想，事实表达保持准确可辨。
+notes:
+  - "分类维度参考 Adobe Spectrum《Illustration》（https://spectrum.adobe.com/foundations/visual-language/illustration）：借鉴插画的注意力层级；封面、章节页与正文的强度分配是本草案向文档场景的迁移。"
+  - "分类维度参考 Looka《Graphic Design Styles》（https://looka.com/blog/graphic-design-styles/）：借鉴色彩、构图、字体与视觉元素共同描述风格的方法。"
+  - "分类维度参考 Midlibrary《Midjourney Style Classifier》（https://midlibrary.io/midjourney-styles-classifier）：借鉴题材、笔触、细节、色彩与情绪等多特征分类。"
+  - "本地视觉起点为 domains/wallpaper/styles/guofeng-houtu.yaml；文档迁移按本次任务范围起草，壁纸中的高细节偏好尚未作为文档偏好确认。"
+  - "沿用 profile.yaml：内容准确性、可读性、任务要求永远优先于审美偏好。"
+  - "本卡描述主视觉位置；正文沿对应阅读任务的排版系统配置。全部偏好及尺寸为待确认草案，hard_constraints 留空。"
+  - 2026-10-19 用户审阅 AI 生成的 document 预览对照图（8 张）后确认本卡入库（选中第 7 张）
+pending_confirmation:
+  - "封面主视觉更偏好山水与建筑、主题相关器物，还是带人物叙事的厚涂场景？"
+  - "主视觉更偏好约半页插画配独立标题区，还是接近满幅、在画内留出标题净空？"
+  - "东方封面题名更偏好现代宋体的书卷感，还是无衬线黑体的清晰利落？"

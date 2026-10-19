@@ -1,0 +1,65 @@
+name: 暗黑展示·投屏演示
+domain: document
+version: 1
+summary: "深色底上的厚涂主视觉与高饱和焦点，倾向用神秘华丽的开场承接清晰、后排可读的论证。"
+use_when: 答辩、项目路演、作品展示等投屏演示，适合希望封面有情绪冲击、正文有清楚结论与证据层级的场景。
+
+likes:
+  - item: 倾向以深蓝灰或近黑打底、柔白承载文字，从宝石红、电蓝、翠绿中选一个高饱和色系点亮核心成果；强调色面积通常较小，情绪神秘华丽。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向把可见笔触、厚涂体积感与丰富材质集中在封面主视觉，题材适合呼应项目对象、作品或研究隐喻；章节页通常沿用局部裁切，正文装饰倾向降到细线或小色标。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 封面倾向采用主视觉与标题分区的不对称构图，华丽细节通常远离文字区；标题叠图时适合放在低细节区域或稳定底板上，图像与文案各有清楚边界。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 正文倾向沿用固定对齐网格，以大号无衬线结论标题、少量支撑文字和一组核心证据形成三级层次；证据较多时适合拆页，让后排观众也能顺着讲述读懂。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 图表倾向使用平整暗底、清楚的浅色标签与有分量的数据线条；高饱和色通常指向正在讲解的数据或关键节点，文字说明与形状标记共同表达重点。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 项目截图、实验图与作品照片倾向保留真实颜色和完整含义，配合贴近对象的短图注；厚涂插画通常承担气氛与主题联想，证据图适合承担事实说明。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 页面节奏倾向在封面、章节转场形成较强情绪峰值，论证页回到安静留白与稳定文字位置；结尾适合用成果主图呼应开场，装饰数量可多可少。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+
+dislikes: []
+hard_constraints:
+  - "交付时标题、正文、图表标签与图注对最终背景的对比度不低于 4.5:1；叠图或半透明底板按合成后的文字覆盖区域检查。"
+  - "承担信息识别的数据线、图形轮廓与节点标记，对相关相邻颜色的对比度不低于 3:1；颜色编码同时配有文字、形状或线型说明。"
+  - "供观众现场阅读的正文与关键图表标签不小于 24 pt；交付验收含目标场地后排试读，读不清的内容通过增大字号、拆页或移入随附阅读稿处理。"
+soft_preferences: []
+references_positive: []
+references_negative: []
+
+prompt_semantics: >-
+  面向答辩与作品展示的暗黑演示视觉语言，倾向用深蓝灰或近黑建立舞台感，
+  以局部高饱和色形成焦点；封面厚涂主视觉、章节局部呼应、正文低装饰构成节奏。
+  图文分区、结论先行、证据清楚、后排可读是信息组织的核心，
+  神秘华丽适合体现在主视觉中，正文的内容准确性、可读性优先于审美。
+
+notes:
+  - "偏好迁移线索来自 wallpaper/anhei-houtu.yaml；本卡的 document 偏好均为 AI 起草，尚待确认，壁纸中的人物与配饰题材不自动成为展示题材。"
+  - "全局取舍沿用 profile.yaml：内容准确性、可读性、任务要求优先于审美偏好。"
+  - "分类维度参考 BCcampus《International Typographic Style》（https://opentextbc.ca/graphicdesign/chapter/1-6-its/）：借鉴内容组织、网格与文字层级的关系。"
+  - "分类维度参考 Adobe Spectrum《Illustration》（https://spectrum.adobe.com/foundations/visual-language/illustration）：借鉴插画的注意力层级，封面到正文的装饰递减是本卡的场景推演。"
+  - "分类维度参考 Midlibrary《Midjourney Style Classifier》（https://midlibrary.io/midjourney-styles-classifier）：借鉴题材、笔触、细节、色彩、构图与情绪的多特征描述。"
+  - "对比度交付指标参考 W3C WCAG 2.2 的文字对比度说明（https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html）与非文字对比度说明（https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html）；本卡将文字统一取 4.5:1 作为检查底线，24 pt 是本草稿的投屏交付基线，现场可读性另行试读。"
+
+  - 2026-10-19 用户审阅 AI 生成的 document 预览对照图（8 张）后确认本卡入库（选中第 1 张）
+pending_confirmation:
+  - "封面更倾向厚涂主视觉占约半页、标题独立成区，还是主视觉接近满页、标题落在平整底板上？"
+  - "高饱和焦点更倾向宝石红、电蓝还是翠绿，与常见的项目题材是否有固定搭配？"
+  - "厚涂主视觉更倾向东方幻想意象、项目对象的艺术化描绘，还是作品原图加少量厚涂装饰？"
+  - "实际展示更常发生在明亮教室还是较暗的答辩室，是否接受根据后排试读结果把正文底色提亮为深蓝灰？"

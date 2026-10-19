@@ -1,0 +1,50 @@
+name: 国风厚涂·半身肖像
+domain: avatar
+version: 1
+summary: '以衣袖、发带和持物动作展开人物故事的国风厚涂半身肖像。'
+use_when: 适合希望头像同时呈现人物神态、传统服饰和轻微动作情节的场景。
+likes:
+- item: 取景覆盖头部至胸腰附近，脸部位于中央偏上，肩线与手势共同构成清楚的半身轮廓
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 汉服交领或和服式叠领衬托颈部，宽袖与飘动发带形成舒展的上半身剪影
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 厚涂笔触顺着衣褶起伏铺开，绸缎柔光、纱料透感与较实的领缘形成材质层次
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 玉佩、纸伞或团扇作为持物与佩饰入画，倾向让手与道具靠近胸前，形成容易辨认的动作关系
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 服饰纹样集中在衣领、肩部和抬至脸侧的袖口，大面积衣身用完整色块与衣褶表现
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 回眸、执伞或拈花带出轻微动作感，视线与手势相互呼应，像故事中暂时停住的一刻
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+dislikes: []
+hard_constraints:
+- 输出为 1:1 方形，边长不低于 1024px
+- 主体面部与关键配饰位于画面中央圆形裁切安全区内
+- 缩小显示时，面部与主体轮廓清晰可辨，避免细小文字和细碎背景细节喧宾夺主
+soft_preferences: []
+references_positive: []
+references_negative: []
+prompt_semantics: 东方人物的厚涂半身肖像，脸部位于中央偏上，以肩线、宽袖和发带构成舒展且清楚的轮廓。汉服交领或和服式叠领贴近面部，纹样集中在衣领和靠近脸部的袖口，衣身以成片颜色、衣褶笔触和柔和反光呈现材质。可通过回眸、执伞或拈花带出轻微动作，玉佩、纸伞或团扇与手势建立自然联系。背景退为淡雅的环境色与模糊景物，整体像故事中的人物片刻，面部与关键配饰留在中央圆形裁切安全区内。
+notes:
+- 分类维度参考Midlibrary（https://midlibrary.io/midjourney-styles-classifier）
+- 分类维度参考Will Wulfken MJ词库（https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference）
+- 分类维度参考Stable Diffusion Art prompt指南（https://stable-diffusion-art.com/prompt-guide/）
+- 分类维度参考Adobe Spectrum（https://spectrum.adobe.com/foundations/visual-language/illustration）
+- 2026-10-19 用户审阅 AI 生成的 avatar 预览对照图（8 张）后确认本卡入库（选中第 4 张）
+pending_confirmation:
+- 人物更偏清雅文人、灵动少年少女，还是成熟而有阅历的角色？
+- 服饰更偏汉服、和服式造型，还是接受两者元素融合？
+- 配色更偏青绿与米白、胭脂红与淡金，还是靛蓝与灰紫？
+- 构图更偏胸像还是腰部以上，是否接受回眸和手持道具遮住部分衣身？

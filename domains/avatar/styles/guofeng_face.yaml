@@ -1,0 +1,50 @@
+name: 国风厚涂·面部近景
+domain: avatar
+version: 1
+summary: '东方人物面部近景，以细腻肤光、眼神和发饰呈现古典的静与艳。'
+use_when: 适合希望脸部和发饰在小尺寸下第一眼可辨、气质安静而明艳的国风头像。
+likes:
+- item: 脸部占画面大头，构图收在头部至肩颈，眼睛与眉眼神态形成第一视觉焦点
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 鬼刀（Ghost Blade）式厚涂插画质感，皮肤明暗过渡细腻，发丝与衣缘保留可见笔触
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 簪、步摇或流苏贴近脸侧入画，金属微光、玉石温润感和垂坠线条成为近看细节
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 朱砂痣、眼尾红或唇上一点胭脂提亮面部，妆容点缀可多可少，倾向保留清楚的眉眼结构
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 背景倾向浅雾、虚化山水或留白感色块，轮廓轻淡，让深色发髻与精细发饰浮在前景
+  weight: 0.5
+  source: ai_drafted
+  since: '2026-10-19'
+- item: 神态沉静，眼神含蓄而有存在感；温润肤色、墨发与朱砂色形成古典的静与艳
+  weight: 0.6
+  source: ai_drafted
+  since: '2026-10-19'
+dislikes: []
+hard_constraints:
+- 输出为 1:1 方形，边长不低于 1024px
+- 主体面部与关键配饰位于画面中央圆形裁切安全区内
+- 缩小显示时，面部与主体轮廓清晰可辨，避免细小文字和细碎背景细节喧宾夺主
+soft_preferences: []
+references_positive: []
+references_negative: []
+prompt_semantics: 东方人物的面部近景，脸部占画面主要面积，以细腻的肤色过渡和清楚的眉眼神态建立视觉中心。整体采用厚涂插画质感，面部柔润，发丝、衣缘与发饰保留绘画笔触。簪、步摇或流苏贴近脸侧，朱砂痣、眼尾红或唇色可作为少量暖色点缀。背景化为浅雾、淡山水或留白感色块，情绪沉静而明艳，面部与关键发饰集中在中央圆形裁切安全区内。
+notes:
+- 分类维度参考Midlibrary（https://midlibrary.io/midjourney-styles-classifier）
+- 分类维度参考Will Wulfken MJ词库（https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference）
+- 分类维度参考Stable Diffusion Art prompt指南（https://stable-diffusion-art.com/prompt-guide/）
+- 分类维度参考Adobe Spectrum（https://spectrum.adobe.com/foundations/visual-language/illustration）
+- 2026-10-19 用户审阅 AI 生成的 avatar 预览对照图（8 张）后确认本卡入库（选中第 6 张）
+pending_confirmation:
+- 人物题材更偏少女、少年、成熟人物，还是中性气质？
+- 配色更偏墨发与朱砂红、青绿与温润玉色，还是淡金与胭脂色？
+- 构图更偏正脸、四分之三侧脸，还是接受完整侧脸？
+- 细节焦点更偏发饰的精巧华丽，还是眉眼与妆容的细腻刻画？

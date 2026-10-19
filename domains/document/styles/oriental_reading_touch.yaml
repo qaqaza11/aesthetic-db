@@ -1,0 +1,59 @@
+name: 东方点缀·连续阅读
+domain: document
+version: 1
+summary: "倾向以章首小幅线稿、页边细线纹样和单色说明图轻点东方意趣，让正文阅读与理解处于前景。"
+use_when: 适合带东方文化主题或希望轻量呈现东方气质的长讲义、课程报告、阅读资料，尤其是需要持续阅读与图文对照的正文。
+likes:
+  - item: 倾向章节起始配置与本章概念相关的小幅东方线稿，如器物轮廓、山石结构或植物形态，笔触简洁，图旁留白充足。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向页眉页脚以细线化的回纹或云纹短段辅助章节导航，纹样通常离开正文栏，与页码和章名保持清楚间距。
+    weight: 0.45
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向单色小插图呈现对象结构、步骤或空间关系，图号、引线与短图注对应正文术语，线条疏密服从解释目标。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向单栏长文配稳定行距，插图位于相关段落前后或页侧独立区，图文之间留出边界，段落阅读顺序自然连续。
+    weight: 0.6
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向现代宋体正文配清晰黑体标签，标题靠字重与段前留白分层，以温和书卷感承载准确术语和完整论述。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向素白或微暖白底配墨黑正文，线稿用单色墨灰，朱砂小点可多可少；文字对比清楚，纹样的视觉重量通常更轻。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向封面沿用稍大的简洁线稿，章首以小插图提示主题，普通正文页更为素净，插图数量随解释需要增减。
+    weight: 0.55
+    source: ai_drafted
+    since: "2026-10-19"
+dislikes: []
+hard_constraints: []
+soft_preferences:
+  - 倾向以 A4 正文 11–12 pt、约 1.4–1.6 倍行距、20–25 mm 页边距作为试排起点，标题约 16–20 pt、图注约 10–11 pt，适配近距离连续阅读。
+  - 倾向章首点缀约占正文栏宽的 1/5–1/4；承担结构说明的图则按标注可读性放大，正文通常保留多个完整段落的中等信息密度。
+  - 倾向页边纹样轻于正文与说明图，说明图的关键轮廓和标注保持清楚；打印缩小后仍以解释内容可辨为先。
+  - 倾向术语、比例关系与图注含义先核对准确，再调整插图风格；课程格式与阅读任务优先于点缀密度。
+references_positive: []
+references_negative: []
+prompt_semantics: >-
+  适合连续阅读的东方轻量点缀正文系统，倾向素白底、墨黑文字、现代宋体与黑体标签构成稳定的信息层级。
+  章首小幅线稿提示主题，页眉页脚的细线纹样辅助定位，正文单色小插图就近解释概念、结构与步骤。
+  封面到章首再到正文的装饰通常逐渐减弱，图文边界与引用关系清楚，内容准确性、可读性与任务要求优先于审美偏好。
+notes:
+  - "分类维度参考 Adobe Spectrum《Illustration》（https://spectrum.adobe.com/foundations/visual-language/illustration）：借鉴低注意力的单色线性插画思路，章首与正文的配置是本草案在连续阅读场景中的应用。"
+  - "分类维度参考 Looka《Graphic Design Styles》（https://looka.com/blog/graphic-design-styles/）：借鉴色板、字体角色、留白与视觉元素的描述维度。"
+  - "分类维度参考 Midlibrary《Midjourney Style Classifier》（https://midlibrary.io/midjourney-styles-classifier）：借鉴细线、单色、题材与细节密度等多特征分类。"
+  - "本卡把东方语言落实为线稿、页边纹样与说明图；厚涂主视觉另由 oriental_cover_hero 描述，二者的使用位置与视觉重量分别确认。"
+  - "沿用 profile.yaml：内容准确性、可读性、任务要求永远优先于审美偏好。"
+  - "全部条目为 AI 起草、待用户确认；尺寸与插图占比属于试排建议，hard_constraints 留空。"
+  - 2026-10-19 用户审阅 AI 生成的 document 预览对照图（8 张）后确认本卡入库（选中第 8 张）
+pending_confirmation:
+  - "长文正文更偏好现代宋体配黑体标签，还是全篇清晰黑体、由线稿承担东方气质？"
+  - "点缀频率更偏好每章开头一幅线稿、普通页保持素净，还是普通页也延续轻量页眉页脚纹样？"
+  - "正文说明图更偏好带手绘笔意的器物线描，还是线宽统一、标注明确的结构示意图？"

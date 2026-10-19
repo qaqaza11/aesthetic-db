@@ -1,0 +1,55 @@
+name: 黑白微纹
+domain: ui_theme
+version: 1
+summary: "在黑白微色与细线留白的基础上加入轻纸纹或磨砂，维持清晰的平面控件。"
+use_when: 探索黑白微色与轻质感的组合，用于与黑白平线对照的壁纸、锁屏和小组件试稿。
+likes:
+  - item: 倾向以黑、白和中性灰建立界面，低饱和点睛色集中于一处视觉焦点，具体色号待确认，点缀量可多可少。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向以低对比细纸纹或磨砂赋予黑白底色轻微质感，控件与图标维持平面表达。
+    weight: 0.4
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向等宽细线图标、简洁轮廓和轻圆角，局部小实心面辅助表达选中态，描边清晰度与底纹分别控制。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向壁纸与锁屏共享留白、线稿与轻纹理；小组件呼应纹理尺度，文字区域的纹理更淡，控件沿用清晰描边和实色标记。
+    weight: 0.4
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向低装饰密度，轻纹理承担主要氛围，线稿或排线作为少量局部图形出现，装饰数量可多可少。
+    weight: 0.4
+    source: ai_drafted
+    since: "2026-10-19"
+  - item: 倾向用字号、字重和间距组织时间、标题、正文与辅助说明，文字以稳定黑白灰呈现，层级独立于纹理变化。
+    weight: 0.5
+    source: ai_drafted
+    since: "2026-10-19"
+dislikes: []
+hard_constraints: []
+soft_preferences:
+  - 内容准确性、可读性和任务要求优先；纹理影响细线或文字时，倾向减弱纹理或增加纯色信息区。
+  - 成功、警告、错误倾向独立配置语义色并搭配文字或符号；状态标记保持清晰平涂，可超出装饰微色的色彩范围。
+  - 纸纹与磨砂倾向分别比较，质感浓淡可多可少；按钮采用当代平面结构，交互提示由边界、填色与标签承担。
+references_positive: []
+references_negative: []
+prompt_semantics: >-
+  C2＝黑白微色×轻质感，保留细线与大量留白。
+  相对C1黑白平线，本卡增加可感知但克制的纸纹或磨砂，配色与图标基线保持可比较。
+  相对A2东方微纹，本卡以黑白灰及低饱和微色为候选；
+  相对B2宝石雾面，本卡的彩色面积与饱和度更低。
+  纹理服务于背景氛围，不延伸为厚重材质或凹凸拟物控件。
+notes:
+  - "分类维度参考Interaction Design Foundation：Neumorphism（https://ixdf.org/literature/topics/neumorphism），借鉴纹理、光影与立体程度的区分。"
+  - "分类维度参考Adobe Firefly：Style Presets（https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets/），借鉴 bw、muted_color 色调词汇。"
+  - "分类维度参考Looka：Graphic Design Styles（https://looka.com/blog/graphic-design-styles/），借鉴几何形态与装饰程度维度。"
+  - "本卡为 ui_theme 候选；壁纸偏好仅作假设来源，尚无本领域的用户确认。"
+  - 2026-10-19 用户审阅 AI 生成的 ui_theme 预览对照图（8 张）后确认本卡入库（选中第 5 张）
+pending_confirmation:
+  - "点睛色具体喜欢哪种颜色或色号，是否想同时比较纯黑白版本？"
+  - "更喜欢细纸纹还是磨砂，纹理希望若隐若现还是近看清楚？"
+  - "更想在白底还是黑底上使用轻纹理，覆盖壁纸还是同时覆盖组件？"
+  - "图标线宽希望多细，轻纹理与局部排线的总装饰量希望多大？"
