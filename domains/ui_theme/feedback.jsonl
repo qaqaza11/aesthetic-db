@@ -2,3 +2,4 @@
 {"ts": "2026-10-19T09:05:00+08:00", "domain": "ui_theme", "kind": "preference_seed", "card": "monochrome_flat", "card_version": 1, "task": "ui_theme 预览对照图评审", "verdict": "up", "note": "用户审阅 8 张 AI 预览对照图后确认本卡入库（选中第 4 张）"}
 {"ts": "2026-10-19T09:05:00+08:00", "domain": "ui_theme", "kind": "preference_seed", "card": "monochrome_subtle_texture", "card_version": 1, "task": "ui_theme 预览对照图评审", "verdict": "up", "note": "用户审阅 8 张 AI 预览对照图后确认本卡入库（选中第 5 张）"}
 {"ts": "2026-10-19T09:05:00+08:00", "domain": "ui_theme", "kind": "preference_seed", "card": "oriental_jewel_fusion", "card_version": 1, "task": "ui_theme 预览对照图评审", "verdict": "up", "note": "用户审阅 8 张 AI 预览对照图后确认本卡入库（选中第 7 张）"}
+{"ts": "2026-10-19T09:32:00+08:00", "domain": "ui_theme", "kind": "preference_seed", "card": "oriental_jewel_fusion", "card_version": 2, "task": "P0-1 东方色板拍板", "verdict": "up", "note": "用户确认五色试稿（钢青#142334＋丹紫红#D2568C＋海王绿#248067＋赤金#F2BE45＋象牙白#FFFBF0）；看实机效果图后决定图标走极简，东方意象只留大画幅"}
